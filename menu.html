@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu — Tavola</title>
+<meta name="description" content="The current board: starters, mains, desserts and wine. Filter by category or by diet — vegetarian, vegan, gluten-free.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127863;</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-title="title.menu">
+
+<!-- ============================== header ============================== -->
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Tavola <small data-cfg="tagline">Kitchen &amp; Wine</small></a>
+
+    <nav class="nav" id="nav">
+      <button class="icon-btn nav-close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+    </nav>
+
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">en</button>
+        <button type="button" data-lang="pl" aria-pressed="false">pl</button>
+        <button type="button" data-lang="uk" aria-pressed="false">ua</button>
+      </div>
+      <button class="icon-btn" type="button" data-theme-toggle
+              data-i18n-attr="aria-label:nav.theme" aria-label="Switch theme">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn burger" type="button" data-nav-toggle
+              data-i18n-attr="aria-label:nav.open" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="eyebrow" data-i18n="menu.eyebrow">The board</div>
+    <h1 data-i18n="menu.h1">Menu</h1>
+    <p class="lead" style="margin-top:18px" data-i18n="menu.lead">Prices include VAT. Tell us about allergies when you order — the kitchen will tell you honestly what can and cannot be changed.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="filters" data-filters>
+      <!-- chips are built in js/main.js so they can be translated -->
+      <noscript><p class="prose">Turn JavaScript on to filter the menu — the dishes below are all of them.</p></noscript>
+    </div>
+
+    <div class="menu-meta">
+      <span data-menu-count>26 dishes</span>
+      <button type="button" data-menu-reset hidden data-i18n="menu.reset">Clear filters</button>
+    </div>
+
+    <div data-menu>
+      <!-- built from js/menu.js -->
+    </div>
+
+    <p class="menu-note" data-i18n="menu.note">A 10% service charge is added for parties of six or more. It goes to the team.</p>
+  </div>
+</section>
+</main>
+
+<!-- ============================== footer ============================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">Tavola <small data-cfg="tagline">Kitchen &amp; Wine</small></a>
+        <p data-cfg="address">ul. Nowogrodzka 42, 00-695 Warsaw</p>
+        <p style="margin-top:10px">
+          <a data-cfg-href="phone" data-cfg="phone" href="tel:+48221234567">+48 22 123 45 67</a>
+        </p>
+      </div>
+
+      <div>
+        <h4 data-i18n="nav.menu">Menu</h4>
+        <div class="foot-links">
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.hours">Opening hours</h4>
+        <table class="hours-table"><tbody data-hours-table></tbody></table>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.find">Find us</h4>
+        <div class="foot-links">
+          <a data-cfg-href="map" href="#" target="_blank" rel="noopener" data-i18n="foot.map">Open in maps</a>
+          <a data-cfg-href="email" data-cfg="email" href="mailto:hello@tavola.example">hello@tavola.example</a>
+          <a data-cfg-href="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a data-cfg-href="facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; <span id="year">2026</span> Tavola. <span data-i18n="foot.rights">All rights reserved.</span></span>
+      <span data-i18n="foot.built">Tavola &mdash; restaurant website template. No tracking, no external fonts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

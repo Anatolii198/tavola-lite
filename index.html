@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tavola — Kitchen &amp; Wine, Warsaw</title>
+<meta name="description" content="A small kitchen with an open fire, a short seasonal menu and a wine list from growers we have met. Book a table in Warsaw.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🍷</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-title="title.home">
+
+<!-- ============================== header ============================== -->
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Tavola <small data-cfg="tagline">Kitchen &amp; Wine</small></a>
+
+    <nav class="nav" id="nav">
+      <button class="icon-btn nav-close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="menu.html" data-i18n="nav.menu">Menu</a>
+    </nav>
+
+    <div class="head-tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">en</button>
+        <button type="button" data-lang="pl" aria-pressed="false">pl</button>
+        <button type="button" data-lang="uk" aria-pressed="false">ua</button>
+      </div>
+      <button class="icon-btn" type="button" data-theme-toggle
+              data-i18n-attr="aria-label:nav.theme" aria-label="Switch theme">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn burger" type="button" data-nav-toggle
+              data-i18n-attr="aria-label:nav.open" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =============================== hero =============================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" data-i18n="home.eyebrow">Warsaw · since 2014</div>
+      <h1 data-i18n="home.h1">Food worth
+sitting down for.</h1>
+      <p class="lead" data-i18n="home.lead">A small kitchen with an open fire, a short menu that changes with the season, and a wine list built from growers we have actually met.</p>
+      <div class="hero-actions">
+        <a class="btn ghost" href="menu.html" data-i18n="home.cta2">See the menu</a>
+      </div>
+      <div class="hero-meta">
+        <span class="open-badge" data-open-badge><i></i><span class="open-label">Open now</span></span>
+        <span data-cfg="address">ul. Nowogrodzka 42, 00-695 Warsaw</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="photo tall photo-c" style="background-image:url('img/hero-room.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= marquee ============================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span data-i18n="home.marqueeA">Open fire</span>
+    <span data-i18n="home.marqueeB">Seasonal menu</span>
+    <span data-i18n="home.marqueeC">Natural wine</span>
+    <span data-i18n="home.marqueeD">Daily bread</span>
+    <span data-i18n="home.marqueeA">Open fire</span>
+    <span data-i18n="home.marqueeB">Seasonal menu</span>
+    <span data-i18n="home.marqueeC">Natural wine</span>
+    <span data-i18n="home.marqueeD">Daily bread</span>
+  </div>
+</div>
+
+<!-- ============================== kitchen ============================= -->
+<section class="reveal">
+  <div class="wrap split wide-left">
+    <div>
+      <div class="eyebrow" data-i18n="home.aboutEyebrow">The kitchen</div>
+      <h2 data-i18n="home.aboutH">Twelve dishes. All of them finished at the pass, none of them waiting.</h2>
+      <p class="prose" data-i18n="home.aboutP">We cook what the market gives us that week, so the menu is short on purpose. Bread is baked every morning, pasta is rolled by hand, and the fire does most of the rest. If a dish is on the board, it is because it is worth the space.</p>
+    </div>
+    <div class="photo photo-f" style="background-image:url('img/kitchen.jpg')"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>12</b><span data-i18n="home.statYears">Years open</span></div>
+      <div class="stat"><b>28</b><span data-i18n="home.statSeats">Seats</span></div>
+      <div class="stat"><b>12</b><span data-i18n="home.statDishes">Dishes on the board</span></div>
+      <div class="stat"><b>12</b><span data-i18n="home.statWines">Wines by the glass</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== signature plates ======================= -->
+<section class="band reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" data-i18n="home.menuEyebrow">This week</div>
+        <h2 data-i18n="home.menuH">Signature plates</h2>
+        <p data-i18n="home.menuP">A handful from the current board. The full menu changes every few weeks.</p>
+      </div>
+      <a class="btn ghost" href="menu.html" data-i18n="home.menuLink">Full menu</a>
+    </div>
+    <div class="plates" data-plates>
+      <!-- built from js/menu.js — every dish marked star:true -->
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================== quote ============================== -->
+<section class="band quote reveal tight">
+  <div class="wrap">
+    <blockquote data-i18n="home.quote">The kind of place you book for Thursday and end up returning to on Saturday.</blockquote>
+    <cite data-i18n="home.quoteBy">Warsaw Food Guide</cite>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ============================== footer ============================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">Tavola <small data-cfg="tagline">Kitchen &amp; Wine</small></a>
+        <p data-cfg="address">ul. Nowogrodzka 42, 00-695 Warsaw</p>
+        <p style="margin-top:10px">
+          <a data-cfg-href="phone" data-cfg="phone" href="tel:+48221234567">+48 22 123 45 67</a>
+        </p>
+      </div>
+
+      <div>
+        <h4 data-i18n="nav.menu">Menu</h4>
+        <div class="foot-links">
+          <a href="menu.html" data-i18n="nav.menu">Menu</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.hours">Opening hours</h4>
+        <table class="hours-table"><tbody data-hours-table></tbody></table>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.find">Find us</h4>
+        <div class="foot-links">
+          <a data-cfg-href="map" href="#" target="_blank" rel="noopener" data-i18n="foot.map">Open in maps</a>
+          <a data-cfg-href="email" data-cfg="email" href="mailto:hello@tavola.example">hello@tavola.example</a>
+          <a data-cfg-href="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a data-cfg-href="facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Tavola. <span data-i18n="foot.rights">All rights reserved.</span></span>
+      <span data-i18n="foot.built">Tavola — restaurant website template. No tracking, no external fonts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
